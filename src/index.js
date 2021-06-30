@@ -15,7 +15,7 @@ app.use(userRouter);
 app.use(taskRouter);
 
 
-app.listen(port, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log(port);
 })
 
